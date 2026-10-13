@@ -1,0 +1,92 @@
+  [
+  {
+    "id": "g001",
+    "query": "If an industry pro teaches without formal training, how can you best extract their practical insights?",
+    "ideal_answer": "To best extract practical insights from an industry professional without formal teaching experience, focus on actively listening and engaging with their real-world examples, even if the delivery seems unstructured or boring. Since their main role isn't teaching, it's important to be proactive in drawing out their experience while relying on your own learning to fill gaps.",
+    "source": "TODO-verify"
+  },
+  {
+    "id": "g002",
+    "query": "How can system performance be verified in real-time without human-labeled correctness data?",
+    "ideal_answer": "System performance in real-time can be verified by monitoring whether the system is running normally, such as checking operational metrics and stability, rather than measuring correctness, since human-labeled data is unavailable during deployment.",
+    "source": "TODO-verify"
+  },
+  {
+    "id": "g003",
+    "query": "How do public rankings of LLMs, akin to benchmark results, reflect their comparative performance?",
+    "ideal_answer": "Public rankings of LLMs, known as leader votes, reflect their comparative performance by publicly displaying how different LLMs score on specific benchmarks. These rankings act like exam results, showing which models perform better in particular aspects, making it easy to compare and identify top performers.",
+    "source": "TODO-verify"
+  },
+  {
+    "id": "g004",
+    "query": "How does automated CI/CD with offline eval gates ensure safe LLM software deployment?",
+    "ideal_answer": "Automated CI/CD with offline eval gates ensures safe LLM software deployment by pre-testing the software before release. If the evaluation score exceeds a set threshold (e.g., 95%), the software is automatically deployed; if not, deployment is blocked. This automation, triggered by code changes via GitHub actions, guarantees only well-tested, high-quality LLM software goes into production.",
+    "source": "TODO-verify"
+  },
+  {
+    "id": "g005",
+    "query": "Explain the benchmark evaluation process simply, including scoring and answer extraction steps.",
+    "ideal_answer": "The benchmark evaluation process involves taking a list of questions, preparing prompts for each, and sending them to the model one by one in a loop. For each question, you extract the model's answer, score it, and store the score. After all questions are processed, you end up with a list of scores for evaluation. Although it sounds simple, writing the actual code, especially for extracting the correct answer, can be more complex than it seems.",
+    "source": "TODO-verify"
+  },
+  {
+    "id": "g006",
+    "query": "How does recall@K compare to other metrics in quantifying retriever performance in eval pipelines?",
+    "ideal_answer": "Recall@K specifically measures the proportion of all relevant documents that the retriever successfully retrieves within its top K results, making it a direct and effective metric to quantify retriever performance. Unlike other metrics that may focus on precision or ranking quality, recall@K ensures the retriever captures as many correct items as possible, which aligns well with the goal of verifying if the retriever is working properly in the eval pipeline.",
+    "source": "TODO-verify"
+  },
+  {
+    "id": "g007",
+    "query": "Identify rare benchmarks assessing emergent reasoning and tool-use in advanced LLM evaluations.",
+    "ideal_answer": "Rare benchmarks assessing emergent reasoning and tool-use in advanced LLM evaluations are not explicitly mentioned in the provided context. The context highlights common benchmarks like MMLU for general knowledge and reasoning, GSM 8 for math, SWE bench and HumanEval for coding, and IF eval for instruction following, but does not specify rare ones focused on emergent reasoning or tool-use.",
+    "source": "TODO-verify"
+  },
+  {
+    "id": "g008",
+    "query": "If a human expert manually labels relevant chunks, how would programmatic evaluation measure retriever output quality?",
+    "ideal_answer": "Programmatic evaluation measures retriever output quality by comparing the retrieved document IDs against the human expert's manually labeled relevant chunk IDs, focusing on ID-level matches rather than string content, and using metrics like precision at k to assess performance.",
+    "source": "TODO-verify"
+  },
+  {
+    "id": "g009",
+    "query": "How do model evals enable AI engineers to assess and improve LLM capabilities pre- and post-deployment?",
+    "ideal_answer": "Model evals enable AI engineers to assess LLM capabilities by providing systematic testing before deployment to ensure performance, and through online evals after deployment to continuously monitor and improve the model in real-world conditions. This two-stage evaluation helps maintain and enhance model effectiveness over time.",
+    "source": "TODO-verify"
+  },
+  {
+    "id": "g010",
+    "query": "How does evaluating a new LLM with GSM 8K compare to other benchmark testing processes?",
+    "ideal_answer": "Evaluating a new LLM with GSM 8K follows a similar process to other benchmark tests: you run a loop where each question from the benchmark dataset is sent to the LLM with the exact prompt and settings specified by the benchmark. The key focus of GSM 8K is testing mathematical capabilities, so it specifically assesses the model's performance on math problems, unlike other benchmarks that may test different skills.",
+    "source": "TODO-verify"
+  },
+  {
+    "id": "g011",
+    "query": "If Quen coder falls outside 8 benchmarks, how would custom evals determine its coding efficacy?",
+    "ideal_answer": "If Quen coder falls outside the 8 standard benchmarks, you would run a custom evaluation by bringing your own coding-related dataset and a scoring mechanism to test its performance. This custom eval helps determine its coding efficacy tailored to the specific tasks it is designed for.",
+    "source": "TODO-verify"
+  },
+  {
+    "id": "g012",
+    "query": "If chatbot answers varied in tone and accuracy, how would you redefine helpfulness criteria?",
+    "ideal_answer": "Helpfulness criteria should be redefined to prioritize consistent accuracy and an appropriate, uniform tone across all answers, ensuring responses are not only correct but also maintain a reliable and clear communication style.",
+    "source": "TODO-verify"
+  },
+  {
+    "id": "g013",
+    "query": "What key issues like SQL errors and latency affect GROK, MINIMAX, and SONNET model performance?",
+    "ideal_answer": "GROK is noted to be faster and cheaper with no mention of SQL errors affecting it. MINIMAX faces repeated SQL errors, especially in American models, impacting its reliability. SONNET shows good latency performance and can handle extra load, with no significant SQL errors reported.",
+    "source": "TODO-verify"
+  },
+  {
+    "id": "g014",
+    "query": "Does matching human expert UPSC answer evaluations fully satisfy the platform’s defined success criteria?",
+    "ideal_answer": "Yes, matching human expert UPSC answer evaluations fully satisfies the platform’s defined success criteria, as the platform’s success is explicitly based on evaluating papers exactly as human experts do.",
+    "source": "TODO-verify"
+  },
+  {
+    "id": "g015",
+    "query": "What are the four specific leaderboard types categorizing models by lab, benchmark, and ranking criteria?",
+    "ideal_answer": "The four specific leaderboard types are:\n\n1. Benchmark-specific leaderboards – rank models based on a single benchmark (e.g., MMLU, HumanEval, GSM8).\n2. Lab-specific leaderboards – categorize models by the lab or organization that developed them.\n3. Model-type leaderboards – group models by their architecture or design.\n4. Composite or aggregated leaderboards – combine multiple benchmarks or criteria to provide an overall ranking.\n\nThese leaderboards help compare model performance from different perspectives.",
+    "source": "TODO-verify"
+  }
+]
